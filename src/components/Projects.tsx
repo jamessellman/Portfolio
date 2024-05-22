@@ -7,7 +7,6 @@ import React from "react";
 //   ButtonNext,
 // } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import project1 from "../assets/project1.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
