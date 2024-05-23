@@ -55,7 +55,7 @@ const Carousel = () => {
   };
   return (
     <div
-      className="m-5 h-full sm:h-[950px] rounded-xl"
+      className="mt-14 h-full  rounded-xl"
       id="background-image">
       <div className="w-3/4 m-auto ">
         <h2 className="text-3xl text-center p-14 text-white">Projects</h2>
@@ -63,7 +63,7 @@ const Carousel = () => {
           <Slider {...settings}>
             {data.map((d) => (
               // div for card
-              <div className="bg-white h-[750px] text-black rounded-xl border-2 border-black text-center">
+              <div className="bg-white sm:h-[500px] h-[650px] text-black rounded-xl border-2 border-black text-center">
                 <p className="text-xl font-semibold ">{d.name}</p>
                 <div className="h-80 rounded-t-xl bg-white flex justify-center items-center bg-no-repeat">
                   <img

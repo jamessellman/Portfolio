@@ -53,7 +53,7 @@ function App() {
           {/* Menu Icon */}
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className="h-7 w-7 absolute right-8 top-6 cursor-pointer md:hidden">
+            className="h-7 w-7 absolute right-8 top-4 cursor-pointer md:hidden">
             {isOpen ? <XMarkIcon /> : <Bars3BottomLeftIcon />}
           </div>
 

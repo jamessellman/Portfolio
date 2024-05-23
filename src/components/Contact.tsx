@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Contact() {
   return (
-    <div className="grid grid-cols-1">
+    <div className="grid grid-cols-1 mt-14">
       <div className="min-h-[100px] text-white m-5 h-auto rounded-lg " id="background-image">
         <h2 className="text-center text-3xl m-5">Contact me</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-evenly m-10">
@@ -17,6 +17,9 @@ function Contact() {
             <FaLinkedin className="w-12 h-12 sm:w-24 sm:h-24" />
           </a>
         </div>
+        <div className="text-center">
+          <p>James Sellman: 2024</p>
+      </div>
       </div>
     </div>
   );

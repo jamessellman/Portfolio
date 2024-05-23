@@ -29,7 +29,7 @@ function Home() {
             <a href="https://github.com/jamessellman" target="_blank" rel="noopener noreferrer">
               <FaGithub className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-white transition-transform transform hover:scale-110" />
             </a>
-            <MdEmail className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-white transition-transform transform hover:scale-110" />
+            <a href="mailto:james.sellman12@gmail.com"><MdEmail className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-white transition-transform transform hover:scale-110" /></a>
             <a href="https://www.linkedin.com/in/jamessellman/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-white transition-transform transform hover:scale-110" />
             </a>
