@@ -9,9 +9,14 @@ $family-sans-serif: "Roboto", sans-serif;
 // ? Import bulma
 @import "../../node_modules/bulma/bulma.sass"; */
 
-#background-image {
-    background-image: url('../assets/background.jpg');
+body {
+    background-color: #0576f0;
+    /* Replace with your desired color */
 }
+
+/* #background-image {
+    background-image: url('../assets/background.jpg');
+} */
 
 @tailwind base;
 @tailwind components;

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Contact() {
   return (
     <div className="grid grid-cols-1">
-      <div className="min-h-[100px] bg-red-500 m-5 h-auto rounded-lg " id="background-image">
+      <div className="min-h-[100px] text-white m-5 h-auto rounded-lg " id="background-image">
         <h2 className="text-center text-3xl m-5">Contact me</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-evenly m-10">
           <a href="https://github.com/jamessellman" target="_blank" rel="noopener noreferrer" className="text-white transition-transform transform hover:scale-110">

@@ -10,8 +10,8 @@ import { FaPuzzlePiece } from "react-icons/fa6";
 
 export default function Skills() {
   return (
-    <div className="m-5" >
-      <div className="h-full sm:h-screen bg-orange-500 p-5 rounded-lg" id="background-image">
+    <div className="m-5 " >
+      <div className="h-full sm:h-screen p-5 rounded-lg text-white" id="background-image">
         <h2 className="text-3xl text-center mt-10 mb-5">Technical Skills</h2>
 
         {/* Front end */}

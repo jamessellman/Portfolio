@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div id="background-image" className="m-5 flex flex-col items-center justify-center bg-gray-200 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl h-full sm:h-screen rounded-lg">
+    <div id="background-image" className="m-5 flex flex-col items-center justify-center text-center text-lg sm:text-xl md:text-2xl lg:text-3xl h-full sm:h-screen rounded-lg text-white">
       <div className="mb-4">
         <h2 className="border-solid text-2xl sm:text-3xl md:text-4xl">About me</h2>
       </div>
