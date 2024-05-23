@@ -14,7 +14,7 @@ function Home() {
         <div className="m-5 flex items-center justify-center text-center text-3xl h-screen sm:col-span-4">
           <img
             className=" object-contain w-48 sm:w-64 md:w-80 lg:w-96 rounded-full border-solid border-8 border-white shadow-2xl transition-transform transform hover:scale-110"
-            src="/src/assets/profile_pic.png"
+            src="https://i.imgur.com/GtQF1gI.jpg"
             alt="profile picture"
           />
         </div>
