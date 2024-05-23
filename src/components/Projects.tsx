@@ -16,7 +16,7 @@ const Carousel = () => {
     {
       name: "Sharker",
       img: "https://i.imgur.com/60iPKgF.png",
-      text: "For project 1 of General Assembly SEB 78, I was tasked with creating a functioning grid-based game. Introducing Sharker, an underwater adaptation of the popular game Frogger. In this game, the objective is to guide your scuba diver from the vast open ocean to safety on the beach. However, beware! Hungry sharks patrol the waters, and falling into a volcano spells disaster, sending your scuba diver back to the starting point. Players are given three lives to navigate to safety, or it's game over!",
+      text: "For Project 1 of General Assembly SEB, I created a grid-based game modeled on Frogger, named Sharker, as a solo coding project. Players are tasked with navigating lava pits and moving sharks to reach safety at the other end of the grid.",
       readme:
         "https://github.com/jamessellman/SEB-Project-1/blob/main/readMe.md",
       deployed: "https://jamessellman.github.io/SEB-Project-1/",
@@ -24,7 +24,7 @@ const Carousel = () => {
     {
       name: "Discover Disney",
       img: "https://i.imgur.com/uYIlj49.png",
-      text: "For the second project in General Assembly SEB I was tasked with a partner to create an online interactive, multipage website that m an API. We were given a lot of scope to choose whichever API we liked and use that API anyway we seemed fit. Myself and my partner decided to use a Disney API which contained data on over 7000 Disney characters as well any extra information about each character such as which films they appeared in as well as an image for the character. We decided to use react to display characters through cards on the screen, to which the user could click on an individual character, at which they would be diverted to a new page for that character with extra informaiton. As our strech goal we wanted to have a form of filtering/searching for a character.",
+      text: "For Project 2 in General Assembly SEB, we used pair programming to create a front end in React that utilizes an existing Disney API. This application allows users to display and search for numerous characters from the world of Disney. Users can click on their favorite characters to learn more information about them.",
       readme:
         "https://github.com/jamessellman/SEB-Project-2/blob/main/README.md",
       deployed: "https://seb-78project2.netlify.app/",
@@ -32,7 +32,7 @@ const Carousel = () => {
     {
       name: "Gourmet E-shop",
       img: "https://i.imgur.com/M5WXDev.png",
-      text: "We have developed an E-SHOP where sellers can showcase their delicious products for sale. Sellers have the ability to edit and delete their products if they are the ones who added the product to our database. Users can visit our website to explore the wide range of products available and make purchases as desired. Additionally, users have the option to leave reviews for products they have experienced. Upon a successful purchase, the number of units sold for the respective product will increase, while also aggregating the total sales across all products for that particular seller.",
+      text: "For Project 3 in General Assembly SEB, our group of three developed a full-stack E-SHOP application. Sellers can showcase their delicious products for sale, and they have the ability to edit and delete their own products. Users can leave reviews for products and make mock purchases.",
       readme:
         "https://github.com/jamessellman/project-3-frontend/blob/main/README.md",
       deployed: "https://gourmet-e-shop-front.netlify.app",
@@ -72,7 +72,7 @@ const Carousel = () => {
                     className="h-full w-full object-cover rounded-tl-lg rounded-tr-lg"
                   />
                 </div>
-                <div className="flex flex-col  items-center gap-4 p-4 border-2 border-black ">
+                <div className="flex flex-col  items-center gap-4 p-4 ">
                   {/* <p className="text-xl font-semibold">{d.name}</p> */}
                   <p>{d.text}</p>
                 </div>
