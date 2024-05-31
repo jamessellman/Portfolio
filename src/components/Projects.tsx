@@ -46,55 +46,80 @@ const Carousel = () => {
       deployed: "https://fiveasidedatabase.netlify.app/",
     },
   ];
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScoll: 4,
-  };
+   const settings = {
+     dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 0
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
   return (
-    <div
-      className="mt-14 h-full  rounded-xl"
-      id="background-image">
-      <div className="w-3/4 m-auto ">
-        <h2 className="text-3xl text-center p-14 text-white">Projects</h2>
-        <div className="">
-          <Slider {...settings}>
-            {data.map((d) => (
-              // div for card
-              <div className="bg-white sm:h-[500px] h-[650px] text-black rounded-xl border-2 border-black text-center">
-                <p className="text-xl font-semibold ">{d.name}</p>
-                <div className="h-80 rounded-t-xl bg-white flex justify-center items-center bg-no-repeat">
-                  <img
-                    src={d.img}
-                    alt="Project image"
-                    className="h-full w-full object-cover rounded-tl-lg rounded-tr-lg"
-                  />
+     <div className="">
+        <div className="w-3/4 m-auto ">
+          <h2 className="text-3xl text-center my-5 text-white">Projects</h2>
+          <div className="">
+            <Slider {...settings}>
+              {data.map((d) => (
+                // div for card the white bit. adding height here will determine how big the overall box will be (850-1166)
+                <div className="bg-white text-black rounded-xl border-2 border-black text-center h-[750px] md:h-[700px] xl:h-[600px] relative">
+                  <p className="text-xl font-semibold ">{d.name}</p>
+                  <div className="h-80 rounded-t-xl bg-white flex justify-center items-center bg-no-repeat">
+                    <img
+                      src={d.img}
+                      alt="Project image"
+                      className="h-full w-full object-cover rounded-tl-lg rounded-tr-lg"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center gap-4 p-4">
+                    {/* <p className="text-xl font-semibold">{d.name}</p> */}
+                    <p>{d.text}</p>
+                  </div>
+                  {/* Div for buttons */}
+                  <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex justify-center gap-4">
+                    <a href={d.readme} target="_blank">
+                      <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl  h-16 transition-transform transform hover:scale-110">
+                        Readme
+                      </button>
+                    </a>
+                    <a href={d.deployed} target="_blank">
+                      <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl  h-16 transition-transform transform hover:scale-110">
+                        View Project
+                      </button>
+                    </a>
+                  </div>
                 </div>
-                <div className="flex flex-col  items-center gap-4 p-4 ">
-                  {/* <p className="text-xl font-semibold">{d.name}</p> */}
-                  <p>{d.text}</p>
-                </div>
-                {/* Div for buttons */}
-                <div className=" flex justify-center items-center">
-                  <a href={d.readme} target="_blank">
-                    <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl m-1 transition-transform transform hover:scale-110">
-                      Readme
-                    </button>
-                  </a>
-                  <a href={d.deployed} target="_blank">
-                    <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl m-1 transition-transform transform hover:scale-110">
-                      View Project
-                    </button>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 
