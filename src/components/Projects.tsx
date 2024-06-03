@@ -24,7 +24,7 @@ const Carousel = () => {
     {
       name: "Discover Disney",
       img: "https://i.imgur.com/uYIlj49.png",
-      text: "For Project 2 in General Assembly SEB, we used pair programming to create a front end in React that utilizes an existing Disney API. This application allows users to display and search for numerous characters from the world of Disney. Users can click on their favorite characters to learn more information about them.",
+      text: "For Project 2 in General Assembly SEB, we used pair programming to create a front end in React that utilises an existing Disney API. This application allows users to display and search for numerous characters from the world of Disney. Users can click on their favourite characters to learn more information about them.",
       readme:
         "https://github.com/jamessellman/SEB-Project-2/blob/main/README.md",
       deployed: "https://seb-78project2.netlify.app/",
@@ -40,86 +40,93 @@ const Carousel = () => {
     {
       name: "5-A-Side Football",
       img: "https://i.imgur.com/iV2ptC8.png",
-      text: "5-A-Side Football API is a website in which users can visit to add, edit and discuss current Premier League football players. Users have the ability to build their own dream 5-A-side football teams as well as play a game to choose their favourite between randomised players from the database.",
+      text: "5-A-Side Football API is a website where users can visit to add, edit, and discuss current Premier League football players. Users can build their own dream 5-A-side football teams and play a game to choose their favourite from randomized players in the database.",
       readme:
         "https://github.com/jamessellman/project-4-frontend/blob/main/README.md",
       deployed: "https://fiveasidedatabase.netlify.app/",
     },
   ];
-   const settings = {
-     dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 0
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-};
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true, 
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: true, 
+          autoplaySpeed: 3000,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          autoplay: true, // Enable autoplay
+          autoplaySpeed: 3000,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true, 
+          autoplaySpeed: 3000,
+        },
+      },
+    ],
+  };
   return (
-     <div className="">
-        <div className="w-3/4 m-auto ">
-          <h2 className="text-3xl text-center my-5 text-white">Projects</h2>
-          <div className="">
-            <Slider {...settings}>
-              {data.map((d) => (
-                // div for card the white bit. adding height here will determine how big the overall box will be (850-1166)
-                <div className="bg-white text-black rounded-xl border-2 border-black text-center h-[750px] md:h-[700px] xl:h-[600px] relative">
-                  <p className="text-xl font-semibold ">{d.name}</p>
-                  <div className="h-80 rounded-t-xl bg-white flex justify-center items-center bg-no-repeat">
-                    <img
-                      src={d.img}
-                      alt="Project image"
-                      className="h-full w-full object-cover rounded-tl-lg rounded-tr-lg"
-                    />
-                  </div>
-                  <div className="flex flex-col items-center gap-4 p-4">
-                    {/* <p className="text-xl font-semibold">{d.name}</p> */}
-                    <p>{d.text}</p>
-                  </div>
-                  {/* Div for buttons */}
-                  <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex justify-center gap-4">
-                    <a href={d.readme} target="_blank">
-                      <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl  h-16 transition-transform transform hover:scale-110">
-                        Readme
-                      </button>
-                    </a>
-                    <a href={d.deployed} target="_blank">
-                      <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl  h-16 transition-transform transform hover:scale-110">
-                        View Project
-                      </button>
-                    </a>
-                  </div>
+    <div className="">
+      <div className="w-3/4 m-auto ">
+        <h2 className="text-3xl text-center my-5 text-white">Projects</h2>
+        <div className="">
+          <Slider {...settings}>
+            {data.map((d) => (
+              <div className="bg-white text-black rounded-xl  text-center h-[750px] md:h-[700px] xl:h-[600px] relative">
+                <p className="text-xl font-semibold ">{d.name}</p>
+                <div className="h-80 rounded-t-xl bg-white flex justify-center items-center bg-no-repeat">
+                  <img
+                    src={d.img}
+                    alt="Project image"
+                    className="h-full w-full object-cover rounded-tl-lg rounded-tr-lg"
+                  />
                 </div>
-              ))}
-            </Slider>
-          </div>
+                <div className="flex flex-col items-center gap-4 p-4">
+                  {/* <p className="text-xl font-semibold">{d.name}</p> */}
+                  <p>{d.text}</p>
+                </div>
+                {/* Div for buttons */}
+                <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex justify-center gap-4">
+                  <a href={d.readme} target="_blank">
+                    <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl  h-16 transition-transform transform hover:scale-110">
+                      Readme
+                    </button>
+                  </a>
+                  <a href={d.deployed} target="_blank">
+                    <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl  h-16 transition-transform transform hover:scale-110">
+                      View Project
+                    </button>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
+    </div>
   );
 };
 
