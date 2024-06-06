@@ -49,7 +49,7 @@ export default function Skills() {
             hidden: { opacity: 0, x: -100 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ duration: 1.5, delay: 2 }}>
+          transition={{ duration: 1.5, delay: 1.5 }}>
           Technical Skills
         </motion.h2>
         <motion.div
@@ -59,7 +59,7 @@ export default function Skills() {
             hidden: { opacity: 0, x: -100 },
             visible: { opacity: 1, x: 0 },
           }}
-          transition={{ duration: 1.5, delay: 3 }}>
+          transition={{ duration: 1.5, delay: 1.5 }}>
           {/* Front end */}
           <h2 className="ml-5 text-xl my-5">Front-end:</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
