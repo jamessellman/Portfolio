@@ -11,7 +11,6 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Carousel from "./components/Projects";
-//
 function App() {
   // State for reactive navbar
   const [isOpen, setIsOpen] = useState(false);
